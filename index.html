@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bem-vindo à Lumnis!</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .popup {
+      background: #fff;
+      width: 92%;
+      max-width: 420px;
+      padding: 35px 25px;
+      border-radius: 18px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      animation: popUp 0.6s ease;
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .logo img {
+      width: 110px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.05em;
+      line-height: 1.6em;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      background: #f1f8ff;
+      padding: 12px;
+      border-left: 4px solid #007bff;
+      margin-bottom: 20px;
+      font-size: 0.98em;
+      color: #003366;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.1em;
+      padding: 13px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .link {
+      display: block;
+      margin-top: 18px;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      margin-top: 25px;
+    }
+
+    .social-icons a {
+      margin: 0 12px;
+      font-size: 1.8em;
+      color: #444;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+
+    .email-icon {
+      color: #007bff;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <div class="logo">
+      <img src="https://via.placeholder.com/100" alt="Logo Lumnis">
+    </div>
+
+    <h1>🎉 Bem-vindo(a) à Lumnis!</h1>
+
+    <p>
+      Estamos imensamente felizes por ter você com a gente!  
+      Obrigado por confiar na <strong>Lumnis</strong> — agora você faz parte de algo incrível.  
+    </p>
+
+    <div class="highlight">
+      <i class="fas fa-envelope email-icon"></i>
+      Acesse o <strong>e-mail que você usou na compra</strong> para pegar sua senha de acesso.  
+      <br/>Se já pegou sua senha, pode ignorar esta mensagem.
+    </div>
+
+    <button class="button" onclick="window.open('https://www.lumnis.com', '_blank')">Entrar na Comunidade</button>
+    <a href="https://www.lumnis.com" class="link" target="_blank">Ou clique aqui para acessar manualmente</a>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color:#0077B5;"></i></a>
+      <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f" style="color:#4267B2;"></i></a>
+    </div>
+  </div>
+</body>
+</html>
